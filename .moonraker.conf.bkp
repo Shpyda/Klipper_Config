@@ -29,6 +29,10 @@ trusted_clients =
 
 [history]
 
+[timelapse]
+output_path = ~/timelapse/
+frame_path = /tmp/timelapse/
+
 [update_manager]
 refresh_interval = 168
 
