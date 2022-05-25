@@ -1,5 +1,5 @@
 [server]
-host = 192.168.7.197
+host = 0.0.0.0
 port = 7125
 enable_debug_logging = False
 max_upload_size = 1024
@@ -10,19 +10,20 @@ log_path = ~/klipper_logs
 enable_object_processing = False
 
 [authorization]
+force_logins = False
 cors_domains = 
 	https://my.mainsail.xyz
 	http://my.mainsail.xyz
 	http://*.local
 	http://*.lan
 trusted_clients = 
+	127.0.0.1
 	10.0.0.0/8
 	127.0.0.0/8
 	169.254.0.0/16
 	172.16.0.0/12
 	192.168.0.0/16
 	192.168.7.0/24
-	127.0.0.1
 	FE80::/10
 	::1/128
 
